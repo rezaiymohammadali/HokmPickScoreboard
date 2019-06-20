@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">حکم پیک</string>
+    <string name="inter_name">نام اعضای گروه ها را مشخص نمایید</string>
+    <string name="group_one">گروه یک</string>
+    <string name="group_two">گروه دو</string>
+    <string name="result">نتیجه</string>
+    <string name="OK">تایید</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--<string name="action_settings">تنظیمات</string>-->
+
+    <!--<string-array name="score_array">-->
+    <!--<item>3</item>-->
+    <!--<item>4</item>-->
+    <!--<item>5</item>-->
+    <!--<item>6</item>-->
+    <!--<item>7</item>-->
+    <!--<item>8</item>-->
+    <!--<item>9</item>-->
+    <!--</string-array>-->
+
+</resources>
