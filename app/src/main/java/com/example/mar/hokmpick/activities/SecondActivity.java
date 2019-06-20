@@ -452,7 +452,8 @@ public class SecondActivity extends AppCompatActivity {
             SecondActivity.this.finish();
             super.onBackPressed();
         } else {
-            Toast.makeText(this, "کلید بازگشت را دوباره لمس کنید ...", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "کلید بازگشت را دوباره لمس کنید ...",
+                    Toast.LENGTH_SHORT).show();
             exit = true;
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -467,7 +468,9 @@ public class SecondActivity extends AppCompatActivity {
 
     private void progressFunc(final SweetAlertDialog sDialog) {
 
-        sDialog.setTitleText("Loading").setContentText("درحال ارسال اطلاعات!").changeAlertType(SweetAlertDialog.PROGRESS_TYPE);
+        sDialog.setTitleText("Loading")
+                .setContentText("درحال ارسال اطلاعات!")
+                .changeAlertType(SweetAlertDialog.PROGRESS_TYPE);
         sDialog.show();
         sDialog.setCancelable(false);
 
@@ -477,25 +480,31 @@ public class SecondActivity extends AppCompatActivity {
                 i++;
                 switch (i) {
                     case 0:
-                        sDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.blue_btn_bg_color));
+                        sDialog.getProgressHelper()
+                                .setBarColor(getResources().getColor(R.color.blue_btn_bg_color));
                         break;
                     case 1:
-                        sDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.material_deep_teal_50));
+                        sDialog.getProgressHelper()
+                                .setBarColor(getResources().getColor(R.color.material_deep_teal_50));
                         break;
                     case 2:
-                        sDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.success_stroke_color));
+                        sDialog.getProgressHelper()
+                                .setBarColor(getResources().getColor(R.color.success_stroke_color));
                         break;
                     case 3:
-                        sDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.material_deep_teal_20));
+                        sDialog.getProgressHelper()
+                                .setBarColor(getResources().getColor(R.color.material_deep_teal_20));
                         break;
                     case 4:
                         sDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.material_blue_grey_80));
                         break;
                     case 5:
-                        sDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.warning_stroke_color));
+                        sDialog.getProgressHelper()
+                                .setBarColor(getResources().getColor(R.color.warning_stroke_color));
                         break;
                     case 6:
-                        sDialog.getProgressHelper().setBarColor(getResources().getColor(R.color.success_stroke_color));
+                        sDialog.getProgressHelper()
+                                .setBarColor(getResources().getColor(R.color.success_stroke_color));
                         break;
                 }
             }

@@ -55,10 +55,13 @@ public class SplashActivity extends AppCompatActivity {
         gifImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SplashActivity.this.startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                SplashActivity.this.startActivity(
+                        new Intent(SplashActivity.this,
+                                MainActivity.class
+                        )
+                );
                 SplashActivity.this.finish();
             }
         });
-
     }
 }
