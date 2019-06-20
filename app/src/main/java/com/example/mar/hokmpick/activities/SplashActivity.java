@@ -8,9 +8,12 @@ import android.view.View;
 import com.example.mar.hokmpick.R;
 import com.wang.avi.AVLoadingIndicatorView;
 
+import pl.droidsonroids.gif.GifImageView;
+
 public class SplashActivity extends AppCompatActivity {
 
-    private pl.droidsonroids.gif.GifImageView gifImageView;
+    private GifImageView gifImageView;
+    //    private GifView gifView;
     private AVLoadingIndicatorView aviProgressBar;
 
     @Override
@@ -43,7 +46,6 @@ public class SplashActivity extends AppCompatActivity {
 //            }
 //        }, 15000); // 3000= 3 seconds
 
-        gifImageView = findViewById(R.id.gifImageView);
 
 //        try {
 //            GifDrawable gifFromAssets = new GifDrawable( getAssets(), "splash_screen.gif" );
@@ -52,6 +54,8 @@ public class SplashActivity extends AppCompatActivity {
 //            e.printStackTrace();
 //        }
 
+        //------------------------------------------------------------------
+        gifImageView = findViewById(R.id.gifImageView);
         gifImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -63,5 +67,21 @@ public class SplashActivity extends AppCompatActivity {
                 SplashActivity.this.finish();
             }
         });
+
+        //---------------------------------------------------------------------
+
+//        gifView = findViewById(R.id.gif);
+//        gifView.start();
+//
+//        gifView.addOnCompletionListener(new GifView.GifCompletionListener() {
+//            @Override
+//            public void onGifCompletion() {
+//
+//                SplashActivity.this.startActivity(
+//                        new Intent(SplashActivity.this,MainActivity.class));
+//                SplashActivity.this.finish();
+//
+//            }
+//        });
     }
 }

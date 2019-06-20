@@ -21,6 +21,16 @@
         android:scaleType="fitXY"
         />
 
+    <!--<com.whiteelephant.gifplayer.GifView-->
+        <!--android:id="@+id/gif"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:animationSpeed="1"-->
+        <!--app:layout_optimizationLevel="chains"-->
+        <!--app:playMode="PLAY_ONCE"-->
+        <!--app:constraintSet="@style/AppTheme"-->
+        <!--app:src="@drawable/splash_screen" />-->
+
     <!--<ProgressBar-->
         <!--android:id="@+id/progressBar"-->
         <!--android:layout_width="wrap_content"-->
@@ -44,7 +54,6 @@
         android:visibility="visible"
         app:indicatorColor="@color/colorPrimaryDark"
         app:indicatorName="BallSpinFadeLoaderIndicator"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

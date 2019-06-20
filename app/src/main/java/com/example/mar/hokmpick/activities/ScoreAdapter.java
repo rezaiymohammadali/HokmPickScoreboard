@@ -57,8 +57,8 @@ public class ScoreAdapter extends RecyclerView.Adapter<ScoreAdapter.ScoreViewHol
         holder.txtSumScore1.setText(Utility.numToPersion(scoreData.getSum_score1() + ""));
         holder.txtSumScore2.setText(Utility.numToPersion(scoreData.getSum_score2() + ""));
 
-        holder.txtScore1.setTypeface(TF,2);
-        holder.txtScore2.setTypeface(TF,2);
+        holder.txtScore1.setTypeface(TF,Typeface.ITALIC);
+        holder.txtScore2.setTypeface(TF,Typeface.ITALIC);
         holder.txtSumScore1.setTypeface(TF);
         holder.txtSumScore2.setTypeface(TF);
 
